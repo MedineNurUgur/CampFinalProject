@@ -6,15 +6,8 @@ using System.Text;
 namespace DataAccess.Abstract
 {
     //Prodect tablosu ile ilgili sql operasyonları burada tanımlanır.
-    public interface IProductDal
+    public interface IProductDal : IEntityRepository<Product>
     {
-
-        List<Product> GetAll();
-        void Add(Product product);
-        void Update(Product product);
-        void Delete(Product product);
-        List<Product> GetAllByCategoryId(int categoryId);
-
-
+        
     }
 }
