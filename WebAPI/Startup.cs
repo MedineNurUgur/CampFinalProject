@@ -33,8 +33,8 @@ namespace WebAPI
             //AOP
 
             services.AddControllers();
-            services.AddSingleton<IProductService,ProductManager>(); // içinde data kullanýlmýyorsa kullanýlýr. new leme iþlemini yapýyor.
-            services.AddSingleton<IProductDal, EfProductDal>();
+            //services.AddSingleton<IProductService,ProductManager>(); // içinde data kullanýlmýyorsa kullanýlýr. new leme iþlemini yapýyor.
+            //services.AddSingleton<IProductDal, EfProductDal>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
