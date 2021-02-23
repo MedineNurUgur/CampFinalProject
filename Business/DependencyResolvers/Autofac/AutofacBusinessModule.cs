@@ -3,12 +3,12 @@ using Autofac.Extras.DynamicProxy;
 using Business.Abstract;
 using Business.Concrete;
 using Castle.DynamicProxy;
+using Core.Utilities.Interceptors;
 using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using static Core.Utilities.Interceptors.MethodInterception;
 
 namespace Business.DependencyResolvers.Autofac
 {
